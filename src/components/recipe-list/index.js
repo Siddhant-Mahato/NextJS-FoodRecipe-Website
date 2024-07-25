@@ -72,6 +72,8 @@ export default function RecipeList({ recipeList }) {
                     Recipes
                 </h2>
 
+                <Link href={'/'} >Go Home</Link>
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {recipeList && recipeList.length > 0 ? 
                         recipeList.map((recipe) => (
@@ -109,7 +111,7 @@ export default function RecipeList({ recipeList }) {
 
                                         </div>
                                         
-                                        
+
                                     </CardContent>
                                 </Card>
                             </Link>

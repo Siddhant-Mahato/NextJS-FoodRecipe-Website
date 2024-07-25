@@ -6,7 +6,9 @@ async function fetchListOfRecipe() {
         const data = await response.json();
 
         return data?.recipes;
-    } catch (error) {
+    }
+    catch (error)
+    {
         throw new Error(error.message);
     }
 }
